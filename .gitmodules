@@ -1,0 +1,3 @@
+[submodule "rssi_sniffer_src"]
+	path = rssi_sniffer_src
+	url = git@github.com:3Gorec/rssi_sniffer.git
