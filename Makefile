@@ -13,7 +13,7 @@ define Package/rssi_sniffer
 	SECTION:=utils
 	CATEGORY:=Utilities
 	TITLE:=RSSI Sniffer
-	DEPENDS:=+libc +libpthread +lrt +protobuf
+	DEPENDS:=+libc +librt +libpthread +protobuf 
 endef
 
  
@@ -24,7 +24,7 @@ endef
 
 define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)
-	$(CP) ./rssi_sniffer/* $(PKG_BUILD_DIR)/
+	$(CP) ./rssi_sniffer_src/* $(PKG_BUILD_DIR)/
 endef
 
 define Package/rssi_sniffer/install
